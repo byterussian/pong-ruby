@@ -1,3 +1,3 @@
-* Pong Game written in Ruby*
+*Pong Game written in Ruby*
 
  **TODO**

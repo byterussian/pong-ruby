@@ -8,12 +8,16 @@ class Pong::Window < Gosu::Window
     @player.warp(50, 200)
     @player2 = Pong::Player.new(self)
     @player2.warp(590, 300)
+
+    @ball = Pong::Ball.new(self)
+    @ball.warp(340, 260)
   end
 
   def draw
     @background_image.draw(0, 0, 0)
     @player.draw
     @player2.draw
+    @ball.draw
   end
 
   def update
@@ -24,6 +28,7 @@ class Pong::Window < Gosu::Window
       @player.down
     end
     @player.move
+    @ball.move
   end
 
   def button_down(id)

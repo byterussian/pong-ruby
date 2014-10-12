@@ -34,5 +34,4 @@ class Pong::Player
   def draw
     @image.draw_rot(@x, @y, 1, 0.0)
   end
-
 end
